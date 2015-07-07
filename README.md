@@ -13,3 +13,15 @@ Social Reading List
 #Wish List for iOS 9
 1. Transition to Safari View Controller
 2. Port to Swift 2.0
+
+#Resources
+
+##Typefaces
+
+###[Born](http://www.carlosdetoro.com/born/)
+**Use for:**
+* Titles
+
+###[Questrial](http://www.fontsquirrel.com/fonts/questrial)
+**Use for:**
+* Body text
