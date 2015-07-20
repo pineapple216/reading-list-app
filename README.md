@@ -8,7 +8,7 @@ Reed is a social reading list which allows users to both upload and share web ar
 Users will login to the app using a Twitter authentication. Users will retain their Twitter username, essentially using the same handle in Twitter as they do in **Reed**.  Users have the ability to create and modify **Lists**. Users also have the ability to follow other users which have authenticated to the **Reed** system.
 
 ### Lists
-Each user is responsible for managing their own list. A list is comprised of 6 main states:.
+Each user is responsible for managing their own list. A list is comprised of two main states:
 
 - **Listed**  Any article that is added through the Safari Web Extension
 
