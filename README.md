@@ -34,10 +34,10 @@ Each user is responsible for managing their own list. A list is comprised of 6 m
 ##Design
 
 ###Logo
-> ![](http://i.imgur.com/LwQBbze.png?1)
+> ![](http://i.imgur.com/LwQBbzem.png?1)
 
 ###Mockup
-> ![](http://i.imgur.com/fPco5Da.png?1)
+> ![](http://i.imgur.com/fPco5Dam.png?1)
 
 ###Type
 
