@@ -12,7 +12,7 @@ Each user is responsible for managing their own list. A list is comprised of thr
 
 - **To Read**  Any article that is added through the Safari Web Extension.
 - **Have Read**  Any article that is viewed via the **To Read** list.
-- **Favorites**  Only articles that are in the **Have Read** section can be tagged as a favorite. Articles can be unfavorited as well which will remove the article from the **Favorites** list and will essentially return the article to the original state of **To Read**.
+- **Favorites**  Only articles that are in the **Have Read** section can be tagged as a favorite. Articles can be unfavorited as well which will remove the article from the **Favorites** list and will essentially return the article to the state of **Have Read**.
 
 
 ##MVP
