@@ -8,11 +8,11 @@ Reed is a social reading list which allows users to both upload and share web ar
 Users will login to the app using a Twitter authentication. Users will retain their Twitter username, essentially using the same handle in Twitter as they do in **Reed**.  Users have the ability to create and modify **Lists**. Users also have the ability to follow other users which have authenticated to the **Reed** system.
 
 ### Lists
-Each user is responsible for managing their own list. A list is comprised of two main states:
+Each user is responsible for managing their own list. A list is comprised of three main states:
 
-- **Listed**  Any article that is added through the Safari Web Extension
-
-- **Faved**  Any already **Listed** article that has ultimate importance. Articles can be unfaved as well which will remove the **Faved** flag and essentially return the article to simply just a **Listed** state.
+- **To Read**  Any article that is added through the Safari Web Extension.
+- **Have Read**  Any article that is viewed via the **To Read** list.
+- **Favorites**  Only articles that are in the **Have Read** section can be tagged as a favorite. Articles can be unfavorited as well which will remove the article from the **Favorites** list and will essentially return the article to the original state of **To Read**.
 
 
 ##MVP
