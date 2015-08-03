@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90CAEF151B6932D900D6107C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CAEF141B6932D900D6107C /* HomeTableViewController.swift */; };
+		90CAEF171B693ABE00D6107C /* Born.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90CAEF161B69390000D6107C /* Born.otf */; };
+		90CAEF191B693C5B00D6107C /* Questrial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90CAEF181B693C5B00D6107C /* Questrial-Regular.ttf */; };
 		940C9B331B478F7700D12C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C9B321B478F7700D12C77 /* AppDelegate.swift */; };
 		940C9B351B478F7700D12C77 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C9B341B478F7700D12C77 /* FirstViewController.swift */; };
 		940C9B371B478F7700D12C77 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C9B361B478F7700D12C77 /* SecondViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90CAEF141B6932D900D6107C /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		90CAEF161B69390000D6107C /* Born.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Born.otf; sourceTree = "<group>"; };
+		90CAEF181B693C5B00D6107C /* Questrial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Questrial-Regular.ttf"; sourceTree = "<group>"; };
 		940C9B2D1B478F7700D12C77 /* Reading List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reading List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		940C9B311B478F7700D12C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940C9B321B478F7700D12C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				940C9B321B478F7700D12C77 /* AppDelegate.swift */,
+				90CAEF141B6932D900D6107C /* HomeTableViewController.swift */,
 				940C9B341B478F7700D12C77 /* FirstViewController.swift */,
 				940C9B361B478F7700D12C77 /* SecondViewController.swift */,
 				940C9B381B478F7700D12C77 /* Main.storyboard */,
@@ -93,6 +100,8 @@
 		940C9B301B478F7700D12C77 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90CAEF181B693C5B00D6107C /* Questrial-Regular.ttf */,
+				90CAEF161B69390000D6107C /* Born.otf */,
 				940C9B311B478F7700D12C77 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -159,6 +168,7 @@
 		940C9B251B478F7700D12C77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "ios-developers.io";
 				TargetAttributes = {
@@ -195,8 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CAEF171B693ABE00D6107C /* Born.otf in Resources */,
 				940C9B3A1B478F7700D12C77 /* Main.storyboard in Resources */,
 				940C9B3F1B478F7800D12C77 /* LaunchScreen.xib in Resources */,
+				90CAEF191B693C5B00D6107C /* Questrial-Regular.ttf in Resources */,
 				940C9B3C1B478F7700D12C77 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CAEF151B6932D900D6107C /* HomeTableViewController.swift in Sources */,
 				940C9B371B478F7700D12C77 /* SecondViewController.swift in Sources */,
 				940C9B331B478F7700D12C77 /* AppDelegate.swift in Sources */,
 				940C9B351B478F7700D12C77 /* FirstViewController.swift in Sources */,
@@ -415,6 +428,7 @@
 				940C9B501B478F7800D12C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		940C9B511B478F7800D12C77 /* Build configuration list for PBXNativeTarget "Reading List AppTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +437,7 @@
 				940C9B531B478F7800D12C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
