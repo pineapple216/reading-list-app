@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A243d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A262e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Born.otf">
@@ -67,6 +68,7 @@
                                         <constraint firstItem="Fqn-Cb-AjW" firstAttribute="leading" secondItem="e7o-Gk-Skg" secondAttribute="leading" constant="16" id="1kU-G9-rDI"/>
                                         <constraint firstItem="msg-cm-g3P" firstAttribute="leading" secondItem="qrZ-Ga-nHb" secondAttribute="trailing" constant="20" id="4Im-qG-Od3"/>
                                         <constraint firstItem="qrZ-Ga-nHb" firstAttribute="top" secondItem="e7o-Gk-Skg" secondAttribute="top" constant="12" id="4mb-h2-lgQ"/>
+                                        <constraint firstItem="aVh-H3-XJD" firstAttribute="top" secondItem="qrZ-Ga-nHb" secondAttribute="bottom" constant="2" id="6U8-Zb-DVu"/>
                                         <constraint firstItem="aVh-H3-XJD" firstAttribute="leading" secondItem="Fqn-Cb-AjW" secondAttribute="trailing" constant="16" id="7fg-nJ-uVi"/>
                                         <constraint firstAttribute="trailing" secondItem="msg-cm-g3P" secondAttribute="trailing" constant="8" id="8hH-8a-Pid"/>
                                         <constraint firstAttribute="trailing" secondItem="aVh-H3-XJD" secondAttribute="trailing" constant="8" id="AKy-NZ-599"/>
@@ -76,11 +78,14 @@
                                         <constraint firstItem="aVh-H3-XJD" firstAttribute="top" secondItem="qrZ-Ga-nHb" secondAttribute="bottom" constant="2" id="Q8Z-2D-LNu"/>
                                         <constraint firstAttribute="bottom" secondItem="aVh-H3-XJD" secondAttribute="bottom" constant="12" id="TO9-cb-dEY"/>
                                         <constraint firstItem="msg-cm-g3P" firstAttribute="baseline" secondItem="qrZ-Ga-nHb" secondAttribute="baseline" id="anT-g1-8Ik"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="aVh-H3-XJD" secondAttribute="bottom" constant="4" id="beW-gV-GMg"/>
                                         <constraint firstItem="qrZ-Ga-nHb" firstAttribute="top" secondItem="e7o-Gk-Skg" secondAttribute="top" constant="14" id="dDr-1L-DWf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aVh-H3-XJD" secondAttribute="trailing" id="f0G-4O-3EI"/>
                                         <constraint firstItem="Fqn-Cb-AjW" firstAttribute="centerY" secondItem="e7o-Gk-Skg" secondAttribute="centerY" id="u1g-ie-u4s"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
+                                            <exclude reference="4mb-h2-lgQ"/>
                                             <exclude reference="dDr-1L-DWf"/>
                                             <exclude reference="K5n-9E-fpO"/>
                                             <exclude reference="Q8Z-2D-LNu"/>

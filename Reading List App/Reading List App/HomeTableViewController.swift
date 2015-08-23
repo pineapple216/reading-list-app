@@ -11,6 +11,7 @@ import UIKit
 class HomeTableViewController: UITableViewController {
     
     private let articles = Article.allArticles()
+    private let webSegue: String = "WebSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,29 +24,35 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("ArticleCell") as! ArticleTableViewCell
-        let article = articles[indexPath.row]
-        
-        cell.title = article.title
-        cell.url = article.url
-        cell.date = article.date
-        
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if let cell = cell as? ArticleTableViewCell {
+            let article = articles[indexPath.row]
+            cell.title = article.title
+            cell.url = article.url
+            cell.date = article.date
+        }
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let article = articles[indexPath.row]
-        performSegueWithIdentifier("WebSegue", sender: article)
+        performSegueWithIdentifier(webSegue, sender: article)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "WebSegue" {
-            if let article = sender as? Article,
-                let vc = segue.destinationViewController as? WebViewController,
-                    let url = NSURL(string: article.url) {
-                    let request = NSURLRequest(URL: url)
-                    vc.loadRequest(request)
+        if let identifier = segue.identifier {
+            switch identifier {
+                case webSegue:
+                    if let article = sender as? Article,
+                        let vc = segue.destinationViewController as? WebViewController,
+                            let url = NSURL(string: article.url) {
+                            let request = NSURLRequest(URL: url)
+                            vc.loadRequest(request)
+                    }
+                default: break
             }
         }
     }
