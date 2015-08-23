@@ -66,6 +66,7 @@
                                     <animations/>
                                     <constraints>
                                         <constraint firstItem="Fqn-Cb-AjW" firstAttribute="leading" secondItem="e7o-Gk-Skg" secondAttribute="leading" constant="16" id="1kU-G9-rDI"/>
+                                        <constraint firstItem="qrZ-Ga-nHb" firstAttribute="top" secondItem="e7o-Gk-Skg" secondAttribute="top" constant="12" id="1zR-gK-7tv"/>
                                         <constraint firstItem="msg-cm-g3P" firstAttribute="leading" secondItem="qrZ-Ga-nHb" secondAttribute="trailing" constant="20" id="4Im-qG-Od3"/>
                                         <constraint firstItem="qrZ-Ga-nHb" firstAttribute="top" secondItem="e7o-Gk-Skg" secondAttribute="top" constant="12" id="4mb-h2-lgQ"/>
                                         <constraint firstItem="aVh-H3-XJD" firstAttribute="top" secondItem="qrZ-Ga-nHb" secondAttribute="bottom" constant="2" id="6U8-Zb-DVu"/>

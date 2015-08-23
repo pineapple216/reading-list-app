@@ -17,6 +17,7 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 58
     }
    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,18 +47,16 @@ class HomeTableViewController: UITableViewController {
         if let identifier = segue.identifier {
             switch identifier {
                 case webSegue:
-                    if let article = sender as? Article,
+                    guard
+                        let article = sender as? Article,
                         let vc = segue.destinationViewController as? WebViewController,
-                            let url = NSURL(string: article.url) {
-                            let request = NSURLRequest(URL: url)
-                            vc.loadRequest(request)
-                    }
+                        let url = NSURL(string: article.url)
+                        else { return }
+                    
+                    let request = NSURLRequest(URL: url)
+                    vc.loadRequest(request)
                 default: break
             }
         }
-    }
-    
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 58
     }
 }
