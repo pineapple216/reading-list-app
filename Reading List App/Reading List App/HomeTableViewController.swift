@@ -12,6 +12,7 @@ class HomeTableViewController: UITableViewController {
     
     private let articles = Article.allArticles()
     private let webSegue: String = "WebSegue"
+    private let articleCell: String = "ArticleCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +26,18 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ArticleCell") as! ArticleTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(articleCell) as! ArticleTableViewCell
         return cell
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        if let cell = cell as? ArticleTableViewCell {
-            let article = articles[indexPath.row]
-            cell.title = article.title
-            cell.url = article.url
-            cell.date = article.date
-        }
+        guard let cell = cell as? ArticleTableViewCell else { return }
+        
+        let article = articles[indexPath.row]
+        
+        cell.title = article.title
+        cell.url = article.url
+        cell.date = article.date
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
