@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901CFE071B8385920026E01C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE061B8385920026E01C /* Article.swift */; };
+		901CFE091B83878E0026E01C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */; };
+		901CFE0B1B8390170026E01C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE0A1B8390170026E01C /* WebViewController.swift */; };
 		90CAEF151B6932D900D6107C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CAEF141B6932D900D6107C /* HomeTableViewController.swift */; };
 		90CAEF171B693ABE00D6107C /* Born.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90CAEF161B69390000D6107C /* Born.otf */; };
 		90CAEF191B693C5B00D6107C /* Questrial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90CAEF181B693C5B00D6107C /* Questrial-Regular.ttf */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901CFE061B8385920026E01C /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		901CFE0A1B8390170026E01C /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		90CAEF141B6932D900D6107C /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		90CAEF161B69390000D6107C /* Born.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Born.otf; sourceTree = "<group>"; };
 		90CAEF181B693C5B00D6107C /* Questrial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Questrial-Regular.ttf"; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 			children = (
 				940C9B321B478F7700D12C77 /* AppDelegate.swift */,
 				90CAEF141B6932D900D6107C /* HomeTableViewController.swift */,
+				901CFE0A1B8390170026E01C /* WebViewController.swift */,
+				901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */,
+				901CFE061B8385920026E01C /* Article.swift */,
 				940C9B341B478F7700D12C77 /* FirstViewController.swift */,
 				940C9B361B478F7700D12C77 /* SecondViewController.swift */,
 				940C9B381B478F7700D12C77 /* Main.storyboard */,
@@ -231,6 +240,9 @@
 				940C9B371B478F7700D12C77 /* SecondViewController.swift in Sources */,
 				940C9B331B478F7700D12C77 /* AppDelegate.swift in Sources */,
 				940C9B351B478F7700D12C77 /* FirstViewController.swift in Sources */,
+				901CFE0B1B8390170026E01C /* WebViewController.swift in Sources */,
+				901CFE091B83878E0026E01C /* ArticleTableViewCell.swift in Sources */,
+				901CFE071B8385920026E01C /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
