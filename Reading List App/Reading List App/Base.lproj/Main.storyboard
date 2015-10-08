@@ -107,7 +107,13 @@
                             <outlet property="delegate" destination="9m5-Fw-on6" id="frZ-DD-smV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eog-sF-F4H"/>
+                    <navigationItem key="navigationItem" id="eog-sF-F4H">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="GGz-yL-eBv">
+                            <connections>
+                                <action selector="logOutButtonPressed:" destination="9m5-Fw-on6" id="fiD-al-oEM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="XvO-Ea-eu6" kind="show" identifier="WebSegue" id="OkQ-M3-ViQ"/>
@@ -214,6 +220,9 @@
                                 <state key="normal" title="Log-in with Twitter">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInButtonPressed" destination="9Ly-9X-U1z" eventType="touchUpInside" id="0hS-n0-Rak"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

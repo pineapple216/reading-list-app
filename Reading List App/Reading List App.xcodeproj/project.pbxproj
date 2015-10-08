@@ -41,6 +41,8 @@
 		5D9CB97E1BA086A40042395F /* ReadingListApp-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReadingListApp-Bridging-Header.m"; sourceTree = "<group>"; };
 		7C44FDD91938E1B532F51FC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		852F096D1BC696DC00A9D05E /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		852F096F1BC69D6300A9D05E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		852F09711BC69D6B00A9D05E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		901CFE061B8385920026E01C /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		901CFE0A1B8390170026E01C /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,8 @@
 		F7D62547A4D85592A70788C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				852F09711BC69D6B00A9D05E /* Social.framework */,
+				852F096F1BC69D6300A9D05E /* Accounts.framework */,
 				7C44FDD91938E1B532F51FC8 /* libPods.a */,
 			);
 			name = Frameworks;

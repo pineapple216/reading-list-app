@@ -26,6 +26,14 @@ class HomeTableViewController: UITableViewController {
             print("Object has been saved.")
         }
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        if PFUser.currentUser() == nil {
+            let stb = UIStoryboard(name: "Main", bundle: nil)
+            let logInVC = stb.instantiateViewControllerWithIdentifier("logInVC") as! LogInViewController
+            presentViewController(logInVC, animated: true, completion: nil)
+        }
+    }
    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
@@ -67,4 +75,10 @@ class HomeTableViewController: UITableViewController {
             }
         }
     }
+    
+    @IBAction func logOutButtonPressed(sender: AnyObject) {
+        PFUser.logOut()
+        viewDidAppear(true)
+    }
+    
 }

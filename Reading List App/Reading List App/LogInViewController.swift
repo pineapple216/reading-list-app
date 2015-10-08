@@ -12,24 +12,23 @@ class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func logInButtonPressed() {
+        PFTwitterUtils.logInWithBlock {
+            (user: PFUser?, error: NSError?) -> Void in
+            if let user = user {
+                if user.isNew {
+                    print("User signed up and logged in with Twitter!")
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                } else {
+                    print("User logged in with Twitter!")
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
+            } else {
+                print("Uh oh. The user cancelled the Twitter login.")
+            }
+        }
     }
-    */
 
 }
