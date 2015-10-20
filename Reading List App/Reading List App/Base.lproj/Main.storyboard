@@ -41,21 +41,21 @@
                                                 <constraint firstAttribute="width" constant="22" id="7rK-1S-J2D"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="490" misplaced="YES" text="Tom Brady" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrZ-Ga-nHb">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="490" text="Tom Brady" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrZ-Ga-nHb">
                                             <rect key="frame" x="54" y="12" width="469" height="18"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Born" family="Born" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="medium.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVh-H3-XJD">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="medium.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVh-H3-XJD">
                                             <rect key="frame" x="54" y="32" width="538" height="13"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Questrial-Regular" family="Questrial" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="08/18/15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msg-cm-g3P">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08/18/15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msg-cm-g3P">
                                             <rect key="frame" x="543" y="16" width="49" height="13"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Questrial-Regular" family="Questrial" pointSize="12"/>
@@ -135,8 +135,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-oR-7mA">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-oR-7mA">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="747" y="-436"/>
         </scene>
-        <!--Log In View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="TxN-Aj-gLC">
             <objects>
-                <viewController storyboardIdentifier="logInVC" id="9Ly-9X-U1z" customClass="LogInViewController" customModule="Reading_List_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logInVC" id="9Ly-9X-U1z" customClass="LoginViewController" customModule="Reading_List_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="duw-MR-mwq"/>
                         <viewControllerLayoutGuide type="bottom" id="Lha-rQ-dT1"/>
@@ -217,11 +217,11 @@
                                     <constraint firstAttribute="height" constant="70" id="N4L-wU-gRQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                <state key="normal" title="Log-in with Twitter">
+                                <state key="normal" title="Login with Twitter">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logInButtonPressed" destination="9Ly-9X-U1z" eventType="touchUpInside" id="0hS-n0-Rak"/>
+                                    <action selector="loginButtonPressed" destination="9Ly-9X-U1z" eventType="touchUpInside" id="wKQ-vY-zux"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -28,11 +28,8 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        if PFUser.currentUser() == nil {
-            let stb = UIStoryboard(name: "Main", bundle: nil)
-            let logInVC = stb.instantiateViewControllerWithIdentifier("logInVC") as! LogInViewController
-            presentViewController(logInVC, animated: true, completion: nil)
-        }
+        super.viewDidAppear(animated)
+        proposeToLogin()
     }
    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,7 +75,15 @@ class HomeTableViewController: UITableViewController {
     
     @IBAction func logOutButtonPressed(sender: AnyObject) {
         PFUser.logOut()
-        viewDidAppear(true)
+        proposeToLogin()
+    }
+    
+    func proposeToLogin() {
+        if PFUser.currentUser() == nil {
+            let stb = UIStoryboard(name: "Main", bundle: nil)
+            let logInVC = stb.instantiateViewControllerWithIdentifier("logInVC") as! LoginViewController
+            presentViewController(logInVC, animated: true, completion: nil)
+        }
     }
     
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D9CB97F1BA086A40042395F /* ReadingListApp-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9CB97E1BA086A40042395F /* ReadingListApp-Bridging-Header.m */; settings = {ASSET_TAGS = (); }; };
 		8297BA75584A2AAC1D581618 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44FDD91938E1B532F51FC8 /* libPods.a */; };
-		852F096E1BC696DC00A9D05E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852F096D1BC696DC00A9D05E /* LogInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		852F096E1BC696DC00A9D05E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852F096D1BC696DC00A9D05E /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		901CFE071B8385920026E01C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE061B8385920026E01C /* Article.swift */; };
 		901CFE091B83878E0026E01C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */; };
 		901CFE0B1B8390170026E01C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE0A1B8390170026E01C /* WebViewController.swift */; };
@@ -40,7 +40,7 @@
 		5D9CB97D1BA086A30042395F /* Reading List App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reading List App-Bridging-Header.h"; sourceTree = "<group>"; };
 		5D9CB97E1BA086A40042395F /* ReadingListApp-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReadingListApp-Bridging-Header.m"; sourceTree = "<group>"; };
 		7C44FDD91938E1B532F51FC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		852F096D1BC696DC00A9D05E /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		852F096D1BC696DC00A9D05E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		852F096F1BC69D6300A9D05E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		852F09711BC69D6B00A9D05E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		901CFE061B8385920026E01C /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				901CFE061B8385920026E01C /* Article.swift */,
 				940C9B341B478F7700D12C77 /* FirstViewController.swift */,
 				940C9B361B478F7700D12C77 /* SecondViewController.swift */,
-				852F096D1BC696DC00A9D05E /* LogInViewController.swift */,
+				852F096D1BC696DC00A9D05E /* LoginViewController.swift */,
 				940C9B381B478F7700D12C77 /* Main.storyboard */,
 				940C9B3B1B478F7700D12C77 /* Images.xcassets */,
 				940C9B3D1B478F7800D12C77 /* LaunchScreen.xib */,
@@ -309,7 +309,7 @@
 			files = (
 				90CAEF151B6932D900D6107C /* HomeTableViewController.swift in Sources */,
 				940C9B371B478F7700D12C77 /* SecondViewController.swift in Sources */,
-				852F096E1BC696DC00A9D05E /* LogInViewController.swift in Sources */,
+				852F096E1BC696DC00A9D05E /* LoginViewController.swift in Sources */,
 				940C9B331B478F7700D12C77 /* AppDelegate.swift in Sources */,
 				940C9B351B478F7700D12C77 /* FirstViewController.swift in Sources */,
 				901CFE0B1B8390170026E01C /* WebViewController.swift in Sources */,
