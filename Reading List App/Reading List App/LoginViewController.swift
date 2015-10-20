@@ -9,12 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    
+ 
     @IBAction func loginButtonPressed() {
         PFTwitterUtils.logInWithBlock {
             (user: PFUser?, error: NSError?) -> Void in
