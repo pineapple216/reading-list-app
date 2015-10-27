@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class HomeTableViewController: UITableViewController {
     
@@ -25,6 +26,11 @@ class HomeTableViewController: UITableViewController {
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             print("Object has been saved.")
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        proposeToLogin()
     }
    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,4 +73,18 @@ class HomeTableViewController: UITableViewController {
             }
         }
     }
+    
+    @IBAction func logOutButtonPressed(sender: AnyObject) {
+        PFUser.logOut()
+        proposeToLogin()
+    }
+    
+    func proposeToLogin() {
+        if PFUser.currentUser() == nil {
+            let stb = UIStoryboard(name: "Main", bundle: nil)
+            let logInVC = stb.instantiateViewControllerWithIdentifier("logInVC") as! LoginViewController
+            presentViewController(logInVC, animated: true, completion: nil)
+        }
+    }
+    
 }

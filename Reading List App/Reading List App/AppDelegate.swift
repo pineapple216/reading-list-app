@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import ParseTwitterUtils
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Parse.
         Parse.setApplicationId("FyE1vRjeMYXISsCcrmmcjN64Dkw0ozLpru6siAWH",
             clientKey: "hpD0Q322NhuppTDK2bbMoJtKJ9L0BULXOpW7zWBm")
+        PFTwitterUtils.initializeWithConsumerKey("ASK_@ALEXBTLV_FOR_KEYS",  consumerSecret:"ASK_@ALEXBTLV_FOR_KEYS")
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
