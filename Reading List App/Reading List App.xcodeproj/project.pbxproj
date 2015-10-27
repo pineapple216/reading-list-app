@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D9CB97F1BA086A40042395F /* ReadingListApp-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9CB97E1BA086A40042395F /* ReadingListApp-Bridging-Header.m */; settings = {ASSET_TAGS = (); }; };
-		8297BA75584A2AAC1D581618 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44FDD91938E1B532F51FC8 /* libPods.a */; };
-		852F096E1BC696DC00A9D05E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852F096D1BC696DC00A9D05E /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5E94D0A825C72DDF212A1A95 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39970C4ABB1C6F939076C49 /* Pods.framework */; };
+		852F096E1BC696DC00A9D05E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852F096D1BC696DC00A9D05E /* LoginViewController.swift */; };
 		901CFE071B8385920026E01C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE061B8385920026E01C /* Article.swift */; };
 		901CFE091B83878E0026E01C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */; };
 		901CFE0B1B8390170026E01C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE0A1B8390170026E01C /* WebViewController.swift */; };
@@ -37,9 +36,6 @@
 
 /* Begin PBXFileReference section */
 		4587BB29E4AF540748516457 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		5D9CB97D1BA086A30042395F /* Reading List App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reading List App-Bridging-Header.h"; sourceTree = "<group>"; };
-		5D9CB97E1BA086A40042395F /* ReadingListApp-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReadingListApp-Bridging-Header.m"; sourceTree = "<group>"; };
-		7C44FDD91938E1B532F51FC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		852F096D1BC696DC00A9D05E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		852F096F1BC69D6300A9D05E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		852F09711BC69D6B00A9D05E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -61,6 +57,7 @@
 		940C9B491B478F7800D12C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940C9B4A1B478F7800D12C77 /* Reading_List_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading_List_AppTests.swift; sourceTree = "<group>"; };
 		DDFC982C39B19071A9685A95 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E39970C4ABB1C6F939076C49 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8297BA75584A2AAC1D581618 /* libPods.a in Frameworks */,
+				5E94D0A825C72DDF212A1A95 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +123,6 @@
 				940C9B3B1B478F7700D12C77 /* Images.xcassets */,
 				940C9B3D1B478F7800D12C77 /* LaunchScreen.xib */,
 				940C9B301B478F7700D12C77 /* Supporting Files */,
-				5D9CB97D1BA086A30042395F /* Reading List App-Bridging-Header.h */,
-				5D9CB97E1BA086A40042395F /* ReadingListApp-Bridging-Header.m */,
 			);
 			path = "Reading List App";
 			sourceTree = "<group>";
@@ -164,7 +159,7 @@
 			children = (
 				852F09711BC69D6B00A9D05E /* Social.framework */,
 				852F096F1BC69D6300A9D05E /* Accounts.framework */,
-				7C44FDD91938E1B532F51FC8 /* libPods.a */,
+				E39970C4ABB1C6F939076C49 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,6 +176,7 @@
 				940C9B2A1B478F7700D12C77 /* Frameworks */,
 				940C9B2B1B478F7700D12C77 /* Resources */,
 				0C0E3C360DC18E5EBE5E3E3C /* Copy Pods Resources */,
+				E70F5350F402D04A6FA04077 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "ios-developers.io";
 				TargetAttributes = {
 					940C9B2C1B478F7700D12C77 = {
@@ -300,6 +296,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		E70F5350F402D04A6FA04077 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -314,7 +325,6 @@
 				940C9B351B478F7700D12C77 /* FirstViewController.swift in Sources */,
 				901CFE0B1B8390170026E01C /* WebViewController.swift in Sources */,
 				901CFE091B83878E0026E01C /* ArticleTableViewCell.swift in Sources */,
-				5D9CB97F1BA086A40042395F /* ReadingListApp-Bridging-Header.m in Sources */,
 				901CFE071B8385920026E01C /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +388,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -448,8 +459,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Reading List App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Reading List App/Reading List App-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -462,8 +474,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Reading List App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Reading List App/Reading List App-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -481,6 +493,7 @@
 				);
 				INFOPLIST_FILE = "Reading List AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reading List App.app/Reading List App";
 			};
@@ -496,6 +509,7 @@
 				);
 				INFOPLIST_FILE = "Reading List AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reading List App.app/Reading List App";
 			};
