@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Parse.
         Parse.setApplicationId("FyE1vRjeMYXISsCcrmmcjN64Dkw0ozLpru6siAWH",
             clientKey: "hpD0Q322NhuppTDK2bbMoJtKJ9L0BULXOpW7zWBm")
-        PFTwitterUtils.initializeWithConsumerKey("ASK_@ALEXBTLV_FOR_KEYS",  consumerSecret:"ASK_@ALEXBTLV_FOR_KEYS")
+        PFTwitterUtils.initializeWithConsumerKey("rPXOeBaNcQTDIshfq5TjY3aas",  consumerSecret:"F5f8pU0iRuTohvvRbA3yjt9bpGhH4jixphRsiXANbLkbmVzQro")
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)

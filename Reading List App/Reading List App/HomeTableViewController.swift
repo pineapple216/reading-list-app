@@ -21,11 +21,6 @@ class HomeTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 58
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Object has been saved.")
-        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -54,6 +49,64 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let article = articles[indexPath.row]
+        
+        // Save the article to Parse
+        // Check if the user already saved the article to Parse
+        let articleQuery = PFQuery(className: "Article")
+        articleQuery.whereKey("title", equalTo: article.title)
+        articleQuery.includeKey("viewers")
+        articleQuery.getFirstObjectInBackgroundWithBlock { (object: PFObject?, error: NSError?) -> Void in
+            //print(object)
+            
+            // The object hasn't been saved before for any user, create it and save it
+            if object == nil {
+                var parseArticle = PFObject(className: "Article")
+                parseArticle["title"] = article.title
+                parseArticle["url"] = article.url
+                
+                let dateFormatter = NSDateFormatter()
+                dateFormatter.dateFormat = "MM/dd/yy"
+                var articleDate = dateFormatter.dateFromString(article.date)
+                
+                parseArticle["date"] = articleDate
+                
+                parseArticle.addObject(PFUser.currentUser()!.objectId!, forKey: "viewers")
+                
+                // MARK: - TODO: Decide wether to use array's or Parse Relations
+                //let relation = parseArticle.relationForKey("viewedBy")
+                //relation.addObject(PFUser.currentUser()!)
+                
+                parseArticle.saveInBackgroundWithBlock({ (succes: Bool, error: NSError?) -> Void in
+                    if succes {
+                        // Add the Parse article to the articles array for the user that has viewed the article
+                        let user = PFUser.currentUser()
+                        user?.addUniqueObject(parseArticle.objectId!, forKey: "articles")
+                        user?.saveInBackground()
+                        print("Article added to articles array")
+                    }
+                    else if (error != nil) {
+                        print("Error occured saving the article: %@", error?.localizedDescription)
+                    }
+                })
+                print("Article saved for the first time")
+            }
+            // The article has already been saved before, by this user or another user.
+            else if object != nil {
+                print("The article has already been saved before, by another user, adding this user if it's not already in the viewers array")
+                object?.addUniqueObject((PFUser.currentUser()?.objectId)!, forKey: "viewers")
+                
+                // MARK: - TODO: Decide wether to use array's or Parse Relations
+                //let relation = object!.relationForKey("viewedBy")
+                //relation.addObject(PFUser.currentUser()!)
+                let user = PFUser.currentUser()
+                user?.addUniqueObject((object?.objectId)!, forKey: "articles")
+                user?.saveInBackground()
+                
+                object?.saveInBackgroundWithBlock(nil)
+            }
+        }
+        
+        // Segue to the webVC
         performSegueWithIdentifier(webSegue, sender: article)
     }
     
